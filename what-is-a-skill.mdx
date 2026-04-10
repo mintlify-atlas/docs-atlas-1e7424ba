@@ -1,0 +1,61 @@
+---
+title: "What is a Skill? Understanding persona distillation"
+description: "A Skill is an AI persona that captures someone's thinking style and reasoning patterns. Learn what distillation means and how Skills are structured."
+---
+
+A Skill is a structured AI persona definition that encodes how a specific person — real or archetypal — thinks, communicates, and reasons. When you load a `.skill` file into an AI assistant, the assistant adopts that persona and responds to your questions the way that person would: using their vocabulary, their mental models, their typical concerns, and their characteristic blind spots. The result is not a chatbot that impersonates someone; it is an AI companion that reasons from that person's perspective.
+
+The concept at the heart of every skill is **distillation**: the process of extracting and encoding the cognitive patterns, communication style, and worldview of a person so that an AI can embody them faithfully and usefully.
+
+## Key concepts
+
+<AccordionGroup>
+  <Accordion title="What is distillation?">
+    Distillation is the process of identifying what makes someone's thinking distinctive — their core mental models, their reasoning heuristics, their communication style, their recurring concerns — and encoding those patterns into an AI persona definition.
+
+    A distilled skill is not a biography or a summary. It does not tell the AI facts about the person. Instead, it shapes how the AI reasons: what it notices, how it frames problems, what trade-offs it prioritizes, and how it talks. A Buffett.skill does not simply know that Warren Buffett prefers undervalued businesses; it reasons about investments the way he does, asking about moats, management integrity, and margin of safety before anything else.
+
+    Good distillation requires careful study of a person's actual output: their writing, interviews, decisions, and reasoning over time. The skill author extracts patterns that are stable and characteristic, not incidental.
+  </Accordion>
+  <Accordion title="What makes a good skill?">
+    A good skill has four qualities:
+
+    - **Specificity**: It captures what is unique about this person, not generic traits. A Boss.skill should feel different from a Supervisor.skill, even though both represent workplace authority figures.
+    - **Consistency**: The persona behaves the same way across different topics and conversation styles. Its mental models apply broadly.
+    - **Useful friction**: A good skill does not just agree with you. It pushes back the way that person would, surfaces the concerns they would raise, and asks the questions they would ask.
+    - **Honesty about limits**: A skill is a model of a person's thinking, not an oracle. It should reason from the person's perspective, but it should not pretend to know things the person would not know.
+  </Accordion>
+  <Accordion title="What can you do with a skill?">
+    Skills are useful in a wide range of situations:
+
+    - **Decision review**: Load a Business Mindset skill and walk through a decision you are facing. The persona will apply that thinker's framework to your problem and surface considerations you may have missed.
+    - **Conversation practice**: Load a Workplace skill and rehearse a difficult conversation — a performance review, a salary negotiation, or a conflict with a colleague — before the real thing.
+    - **Perspective-taking**: Load a philosophy or culture skill and explore how a different worldview approaches a question you are thinking about.
+    - **Creative collaboration**: Load a Tools skill like X-Mentor or Blogger to get persona-driven feedback on your writing or social media content.
+    - **Emotional support**: Load a Relationships or Emotional Companionship skill to explore a personal dynamic or find comfort in a familiar voice.
+  </Accordion>
+</AccordionGroup>
+
+## Anatomy of a skill
+
+Every skill in the Open Skills collection follows a consistent structure. Understanding this structure helps you use skills effectively and helps you create your own.
+
+**Persona definition** — The core of the skill. This section describes who the person is, what they value, what they care about most, and how they see the world. It establishes the stable identity that shapes every response.
+
+**Communication style** — How the person speaks and writes. This includes vocabulary preferences, sentence structure, level of formality, use of humor or directness, and characteristic phrases or rhetorical moves. A Feynman.skill speaks differently from a Zizek.skill, even when addressing the same topic.
+
+**Knowledge domain** — The areas of expertise and experience that the person draws on most naturally. This does not prevent the persona from discussing other topics, but it does shape where they are most confident and where they defer.
+
+**Sample interactions** — Representative exchanges that demonstrate the persona in action. These examples calibrate the AI's behavior and help you understand what kinds of conversations the skill is designed for.
+
+<Tip>
+  You do not have to write a skill from scratch. [Nuwa.skill](/skills/tools) is a meta-skill designed specifically to help you distill any person into a new skill. Describe who you want to distill, share what you know about them, and Nuwa will guide you through the process of building a well-structured skill definition.
+</Tip>
+
+## Examples
+
+**Buffett.skill** reasons about investments using value investing principles. Ask it to evaluate a business and it will ask about the competitive moat, the quality of management, the consistency of earnings, and the price relative to intrinsic value — in that order. It will not speculate on short-term price movements and will actively discourage you from doing so.
+
+**Boss.skill** responds the way your actual boss would. It is attuned to organizational dynamics, sensitive to what reflects well or poorly on the team, and focused on outcomes that matter to the business. It is useful for practicing how to frame a request, deliver difficult news, or negotiate scope.
+
+**Nuwa.skill** is a meta-tool rather than a persona. It helps you create new skills by asking the right questions about the person you want to distill and structuring the output into a valid skill definition. If you want to build a custom skill, start here.

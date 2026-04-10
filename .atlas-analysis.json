@@ -1,0 +1,102 @@
+{
+  "projectType": "general",
+  "projectName": "Open Skills",
+  "projectDescription": "A curated community collection of AI persona skills that distill real people's thinking styles — colleagues, bosses, thinkers, and cultural figures — into interactive AI companions.",
+  "theme": "almond",
+  "primaryColor": "#cc7c5c",
+  "lightColor": null,
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "what-is-a-skill",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Skill Categories",
+            "pages": [
+              "skills/workplace-academia",
+              "skills/relationships",
+              "skills/self-development",
+              "skills/business-mindset",
+              "skills/internet-celebrities",
+              "skills/traditional-culture",
+              "skills/emotional-companionship",
+              "skills/tools"
+            ]
+          },
+          {
+            "group": "Contributing",
+            "pages": [
+              "contributing/how-to-contribute",
+              "contributing/skill-template",
+              "contributing/guidelines"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Curated collection of 35+ open-source AI persona skills",
+    "Skills across 8 categories: workplace, relationships, self-development, business, internet celebrities, philosophy, emotional companionship, and tools",
+    "Community-driven contributions via GitHub pull requests",
+    "Bilingual support (Chinese and English)",
+    "Distill real people's thinking patterns into interactive AI skills",
+    "Covers iconic thinkers like Buffett, Munger, Steve Jobs, and Elon Musk",
+    "Unique tools like Nuwa.skill (skill generator) and Taotie.skill (skill evolver)"
+  ],
+  "publicApiSurface": [
+    "Colleague.skill",
+    "Boss.skill",
+    "Supervisor.skill",
+    "Professor.skill",
+    "Senpai.skill",
+    "HR.skill",
+    "Anti-Distill.skill",
+    "Crush.skill",
+    "First Love.skill",
+    "Ex.skill",
+    "Partner.skill",
+    "Parents.skill",
+    "Her.skill",
+    "Yourself.skill",
+    "DigitalLife.skill",
+    "Immortal.skill",
+    "Relic.skill",
+    "RetailInvestor.skill",
+    "Buffett.skill",
+    "DuanYongping.skill",
+    "SteveJobs.skill",
+    "ElonMusk.skill",
+    "Munger.skill",
+    "Feynman.skill",
+    "Naval.skill",
+    "Taleb.skill",
+    "Zizek.skill",
+    "Trump.skill",
+    "ZhangYiming.skill",
+    "FengGe.skill",
+    "ZhangXuefeng.skill",
+    "HuChenfeng.skill",
+    "TongJincheng.skill",
+    "Khazix.skill",
+    "Fortune.skill",
+    "DiamondSutra.skill",
+    "YinYuan.skill",
+    "Master.skill",
+    "Reunion.skill",
+    "StarFan.skill",
+    "Taotie.skill",
+    "Nuwa.skill",
+    "X-Mentor.skill",
+    "Blogger.skill"
+  ]
+}

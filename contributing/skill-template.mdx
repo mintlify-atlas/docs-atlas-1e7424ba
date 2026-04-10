@@ -1,0 +1,73 @@
+---
+title: "Skill template: structure and reference for Open Skills"
+description: "How to structure a persona skill for Open Skills. Covers identity, communication style, reasoning framework, and knowledge domain, with a skeleton template."
+---
+
+A well-structured skill goes beyond a simple description. It encodes how a person thinks, speaks, reasons, and responds — giving the AI enough signal to behave authentically in that persona across a wide range of conversations. The sections below break down the key components of a skill and explain what to include in each one.
+
+<Tip>
+  The more specific and detailed your skill, the more authentic the AI persona will feel. Vague traits produce generic responses; precise observations produce distinctive ones.
+</Tip>
+
+<AccordionGroup>
+  <Accordion title="Persona identity">
+    Establish who this person is. Include their name (or role), a brief biography or context that explains their background, and three to five defining characteristics that set them apart. This section anchors everything else — the communication style and reasoning framework should feel consistent with the identity you define here.
+
+    Ask yourself: if someone who had never heard of this person read only this section, would they have a clear mental model of who they're dealing with?
+  </Accordion>
+
+  <Accordion title="Communication style">
+    Capture how this person speaks. Consider their tone (formal, casual, blunt, philosophical), their vocabulary (technical jargon, plain language, metaphor-heavy), their sentence structure (short and punchy or long and winding), and any signature phrases or verbal habits they return to.
+
+    This is one of the most important sections for producing a recognizable persona. Listen to interviews, read their writing, and note the specific patterns that make their voice distinct.
+  </Accordion>
+
+  <Accordion title="Reasoning framework">
+    Describe how this person thinks and makes decisions. What mental models do they rely on? How do they approach uncertainty? What do they optimize for? What do they consistently push back against?
+
+    Skills can reference established frameworks (first principles, inversion, expected value) or more idiosyncratic reasoning patterns specific to the person. Include the values that drive their decision-making — what they prioritize when tradeoffs arise.
+  </Accordion>
+
+  <Accordion title="Knowledge domain">
+    List the areas where this person has deep expertise and the key references that shaped their thinking — books, concepts, frameworks, experiences. This helps the AI stay within the bounds of what the persona would credibly know and reference.
+
+    You can also note areas the persona deliberately avoids or is skeptical of, which can be just as important for authenticity.
+  </Accordion>
+
+  <Accordion title="Sample interactions">
+    Include two to five example Q&A pairs that show the persona responding in their authentic voice. These samples serve as calibration data — they demonstrate the tone, reasoning style, and vocabulary working together.
+
+    Choose questions that reveal character: how does this person handle disagreement, uncertainty, or questions outside their expertise? Good sample interactions do more than any description can.
+  </Accordion>
+</AccordionGroup>
+
+## Skill skeleton template
+
+Use this template as a starting point for your `.skill` file. Expand each section with as much detail as you can — skills can always be extended with specific memories, references, or domain knowledge as you learn more about the persona.
+
+```markdown
+# [PersonName].skill
+
+## Persona Identity
+Name: [Full name or role]
+Background: [Brief biography or context]
+Core traits: [3-5 defining characteristics]
+
+## Communication Style
+Tone: [formal/casual/direct/philosophical/etc.]
+Vocabulary: [technical/simple/metaphor-rich/etc.]
+Signature phrases: [Any recurring expressions or habits]
+
+## Reasoning Framework
+Mental models: [Key frameworks this person uses]
+Decision approach: [How they make decisions]
+Values: [What they prioritize]
+
+## Knowledge Domain
+Expertise: [Primary knowledge areas]
+Key references: [Books, concepts, frameworks they draw from]
+
+## Sample Interactions
+Q: [Example question]
+A: [Example response in persona voice]
+```

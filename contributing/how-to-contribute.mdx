@@ -1,0 +1,60 @@
+---
+title: "How to contribute a skill to Open Skills"
+description: "Learn how to create your own persona skill, publish it as a GitHub repository, and submit a pull request to add it to the Open Skills catalog."
+---
+
+Open Skills is a community-driven catalog built entirely through GitHub pull requests. Anyone can contribute a skill — whether you're distilling a famous thinker, a personal relationship, or an abstract role. This page walks you through the full contribution process, from creating your repository to getting your skill listed in the catalog.
+
+<Note>
+  All skills must follow the community guidelines before they can be accepted. Read the [community guidelines](/contributing/guidelines) before submitting.
+</Note>
+
+<Tip>
+  Use [Nuwa.skill](/skills/tools) to help draft your skill's persona definition. Nuwa is specifically designed to distill anyone's thinking style into a structured skill.
+</Tip>
+
+<Steps>
+  <Step title="Create your skill repository on GitHub">
+    Create a new public GitHub repository for your skill. Follow the naming convention:
+
+    ```
+    your-handle/skillname-skill
+    ```
+
+    For example: `alchaincyf/feynman-skill` or `notdog1998/yourself-skill`.
+
+    Make sure the repository is set to **public** — private repositories cannot be listed in the catalog.
+  </Step>
+
+  <Step title="Define your skill persona">
+    Your skill is a system prompt that captures a person's (or role's) cognitive patterns, reasoning style, and communication approach. Write a `.skill` file in your repository with a well-structured persona definition.
+
+    See the [skill template and structure reference](/contributing/skill-template) for a detailed breakdown of what to include and a ready-to-use skeleton template.
+  </Step>
+
+  <Step title="Write a README for your skill repository">
+    Add a `README.md` to your repository that explains:
+
+    - Who or what the skill represents
+    - What the skill is good for
+    - Any usage tips or example prompts
+
+    A clear README helps reviewers understand your skill and helps users decide whether to use it.
+  </Step>
+
+  <Step title="Submit a PR to add your skill to the catalog">
+    Fork the [tmstack/awesome-persona-skills](https://github.com/tmstack/awesome-persona-skills) repository and add one row to the appropriate category table in `README.md` and `README_EN.md`.
+
+    The row format is:
+
+    ```markdown
+    | YourName.skill | Brief description | [your-handle/your-skill](https://github.com/your-handle/your-skill) |
+    ```
+
+    Keep the description concise — ideally under 50 characters. Then open a pull request against the main repository.
+  </Step>
+
+  <Step title="Wait for review and merging">
+    A maintainer will review your pull request. They may leave feedback or request changes before merging. Once approved, your skill will appear in the Open Skills catalog.
+  </Step>
+</Steps>
